@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        text-align: left;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    header a {
+        color: currentColor;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border: 1px #888 solid;
+        transition: all 300ms;
+    }
+    header a:hover {
+        background: #000;
+        color: #fff;
+    }
+    #calendar-container {
+        height: 100%;
+        font-size: 2rem;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(10, 60px);
+        grid-gap: 2px;
+        padding-right: 1rem;
+    }
+    .calendar-title {
+        text-align: center;
+    }
+    .timeslot {
+        text-align: center;
+    }
+    p:hover {
+        cursor:pointer;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calendar</h1>
+        <a href="/reservations">Back to Reservations</a>
+    </header>
+    <div id="calendar-container">
+            <p></p>
+            <p class="calendar-title">Monday</p>
+            <p class="calendar-title">Tuesday</p>
+            <p class="calendar-title">Wednesday</p>
+            <p class="calendar-title">Thursday</p>
+            <p class="calendar-title">Friday</p>
+            <p class="calendar-title">Saturday</p>
+            <p class="calendar-title">Sunday</p>
+            <p class="timeslot">3:00 pm</p>
+            <p data-time="3:00" class="monday"></p>
+            <p data-time="3:00" class="tuesday"></p>
+            <p data-time="3:00" class="wednesday"></p>
+            <p data-time="3:00" class="thursday"></p>
+            <p data-time="3:00" class="friday"></p>
+            <p data-time="3:00" class="saturday"></p>
+            <p data-time="3:00" class=sunday></p>
+            <p class="timeslot">4:00 pm</p>
+            <p data-time="4:00" class="monday"></p>
+            <p data-time="4:00" class="tuesday"></p>
+            <p data-time="4:00" class="wednesday"></p>
+            <p data-time="4:00" class="thursday"></p>
+            <p data-time="4:00" class="friday"></p>
+            <p data-time="4:00" class="saturday"></p>
+            <p data-time="4:00" class=sunday></p>
+            <p class="timeslot">5:00 pm</p>
+            <p data-time="5:00" class="monday"></p>
+            <p data-time="5:00" class="tuesday"></p>
+            <p data-time="5:00" class="wednesday"></p>
+            <p data-time="5:00" class="thursday"></p>
+            <p data-time="5:00" class="friday"></p>
+            <p data-time="5:00" class="saturday"></p>
+            <p data-time="5:00" class=sunday></p>
+            <p class="timeslot">6:00 pm</p>
+            <p data-time="6:00" class="monday"></p>
+            <p data-time="6:00" class="tuesday"></p>
+            <p data-time="6:00" class="wednesday"></p>
+            <p data-time="6:00" class="thursday"></p>
+            <p data-time="6:00" class="friday"></p>
+            <p data-time="6:00" class="saturday"></p>
+            <p data-time="6:00" class=sunday></p>
+            <p class="timeslot">7:00 pm</p>
+            <p data-time="7:00" class="monday"></p>
+            <p data-time="7:00" class="tuesday"></p>
+            <p data-time="7:00" class="wednesday"></p>
+            <p data-time="7:00" class="thursday"></p>
+            <p data-time="7:00" class="friday"></p>
+            <p data-time="7:00" class="saturday"></p>
+            <p data-time="7:00" class=sunday></p>
+            <p class="timeslot">8:00 pm</p>
+            <p data-time="8:00" class="monday"></p>
+            <p data-time="8:00" class="tuesday"></p>
+            <p data-time="8:00" class="wednesday"></p>
+            <p data-time="8:00" class="thursday"></p>
+            <p data-time="8:00" class="friday"></p>
+            <p data-time="8:00" class="saturday"></p>
+            <p data-time="8:00" class=sunday></p>
+            <p class="timeslot">9:00 pm</p>
+            <p data-time="9:00" class="monday"></p>
+            <p data-time="9:00" class="tuesday"></p>
+            <p data-time="9:00" class="wednesday"></p>
+            <p data-time="9:00" class="thursday"></p>
+            <p data-time="9:00" class="friday"></p>
+            <p data-time="9:00" class="saturday"></p>
+            <p data-time="9:00" class=sunday></p>
+            <p class="timeslot">10:00 pm</p>
+            <p data-time="10:00" class="monday"></p>
+            <p data-time="10:00" class="tuesday"></p>
+            <p data-time="10:00" class="wednesday"></p>
+            <p data-time="10:00" class="thursday"></p>
+            <p data-time="10:00" class="friday"></p>
+            <p data-time="10:00" class="saturday"></p>
+            <p data-time="10:00" class=sunday></p>
+            <p class="timeslot">11:00 pm</p>
+            <p data-time="11:00" class="monday"></p>
+            <p data-time="11:00" class="tuesday"></p>
+            <p data-time="11:00" class="wednesday"></p>
+            <p data-time="11:00" class="thursday"></p>
+            <p data-time="11:00" class="friday"></p>
+            <p data-time="11:00" class="saturday"></p>
+            <p data-time="11:00" class=sunday></p>
+            <p class="timeslot">12:00 pm</p>
+            <p data-time="12:00" class="monday"></p>
+            <p data-time="12:00" class="tuesday"></p>
+            <p data-time="12:00" class="wednesday"></p>
+            <p data-time="12:00" class="thursday"></p>
+            <p data-time="12:00" class="friday"></p>
+            <p data-time="12:00" class="saturday"></p>
+            <p data-time="12:00" class=sunday></p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
+        <script>
+            const calendar = $("#calendar-container")
+            const timeslotArr = $(".timeslot");
+            const mondayArr = $(".monday");
+            const tuesdayArr = $(".tuesday");
+            const wednesdayArr = $(".wednesday");
+            const thursdayArr = $(".thursday");
+            const fridayArr = $(".friday");
+            const saturdayArr = $(".saturday");
+            const sundayArr = $(".sunday");
+            const weekArr2 = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+            const weekArr = [mondayArr, tuesdayArr, wednesdayArr, thursdayArr, fridayArr, saturdayArr, sundayArr];
+            const timeArr = ["3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00"];
+            $.get("/api/calendar", (data)=>{
+                console.log(data); 
+                console.log(data[0]["3:00"]);
+                for (let i = 0; i < data.length; i++) {
+                    for (let j = 0; j < timeArr.length; j++) {
+                        if (data[i][timeArr[j]]) {
+                            weekArr[i][j].style.backgroundColor = "#f58f8f";
+                        } else {
+                            weekArr[i][j].style.backgroundColor = "#9ae79a";
+                        }
+                    }
+                }
+            });
+
+        calendar.on("click", "p", (event)=>{
+            let target = event.target;
+            let targetDay = target.classList[0];
+            let targetTime = target.getAttribute("data-time");
+            location.replace(`/reservations/?day=${targetDay}&time=${targetTime}`);
+        })
+        </script>
+       
+        
+
+    </div>
+</body>
+</html>
