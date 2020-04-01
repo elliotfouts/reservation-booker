@@ -7,11 +7,11 @@ module.exports = function(app){
         day = req.query.day;
         time = req.query.time;
         if (day == undefined || time == undefined) {
-            res.sendFile(path.join(__dirname, "../public/reservations.html"))
+            res.sendFile(path.join(__dirname, "../public/html/reservations.html"))
         } else {
             console.log(req.query.day);
             console.log(req.query.time);
-            fs.readFile(path.join(__dirname, "../public/reservations.html"), (err, data)=>{
+            fs.readFile(path.join(__dirname, "../public/html/reservations.html"), (err, data)=>{
                 if (err) {
                     // res.sendFile(path.join(__dirname, "../public/reservations.html"))
                     res.end("server error");
@@ -28,6 +28,6 @@ module.exports = function(app){
     });
 
     app.get("/calendar", (req, res)=>{
-        res.sendFile(path.join(__dirname, "../public/calendar.html"))
+        res.sendFile(path.join(__dirname, "../public/html/calendar.html"))
     })
 }
